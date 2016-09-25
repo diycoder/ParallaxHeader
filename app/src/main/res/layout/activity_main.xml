@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="commumu.parallaxheader.MainActivity">
+
+    <com.mumu.parallaxheader.view.PullToZoomListView
+        android:id="@+id/ptzlv_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_top_bar_height"
+        android:background="@drawable/bg_nav_panel"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/tv_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="生活如此多娇"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_title_big_size"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/tv_nick"
+            android:layout_height="match_parent">
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:id="@+id/progressBar"
+                android:layout_width="35dp"
+                android:layout_centerVertical="true"
+                android:layout_height="35dp"
+                android:indeterminateDrawable="@drawable/bg_refresh_loding"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_top_avatar"
+            android:layout_width="40dp"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/tv_nick"
+            android:visibility="gone">
+
+            <com.mumu.parallaxheader.view.RoundImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_default_avatar" />
+
+            <ImageView
+                android:id="@+id/iv_certified"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_authenticate"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_actionbar_selector"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back_white" />
+
+        <ImageButton
+            android:id="@+id/ib_notification"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_setting_white"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</RelativeLayout>

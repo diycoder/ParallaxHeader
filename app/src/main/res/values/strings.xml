@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ParallaxHeader</string>
+    <string name="load_more_loading">加载中，请稍后...</string>
+    <string name="load_more_loaded_no_more">亲，没有更多了...</string>
+</resources>

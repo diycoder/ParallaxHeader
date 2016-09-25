@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                style="@style/TextContentTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="说说" />
+
+            <TextView
+                style="@style/TextSmallTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="432" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.2px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/divider_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                style="@style/TextContentTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="日志" />
+
+            <TextView
+                style="@style/TextSmallTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="33" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.2px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/divider_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                style="@style/TextContentTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="相册" />
+
+            <TextView
+                style="@style/TextSmallTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="576" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.2px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/divider_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                style="@style/TextContentTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="留言" />
+
+            <TextView
+                style="@style/TextSmallTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="329" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.2px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/divider_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                style="@style/TextContentTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="访客" />
+
+            <TextView
+                style="@style/TextSmallTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8372" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_text" />
+</LinearLayout>
